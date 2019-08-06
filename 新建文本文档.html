@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="lib/jquery-1.12.4.js"></script>
+    <script src="./新建文本文档.json"></script>
+    <script>
+        $(function () {
+            $.ajax({
+                type: 'POST',
+                url: 'file:///C:/Users/86150/Desktop/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%20(3)/%E6%96%B0%E5%BB%BA%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3.json',
+                dataType: 'json',
+                success: function (res) {
+                    console.log(res)
+                }
+            })
+        })
+    </script>
+
+</body>
+
+</html>
